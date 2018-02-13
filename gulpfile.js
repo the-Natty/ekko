@@ -148,6 +148,18 @@ function buildJs(file, callback) {
         });
 }
 
+// 监视文件改动并重新载入
+gulp.task('serve', function() {
+    browserSync({
+      server: {
+        baseDir: 'public',
+        index: 'index.html'
+      }
+    });
+  
+    gulp.watch(['*.html', 'src/**/*.less', 'src/**/*.js'], {cwd: 'public'}, reload);
+  });
+
 // 注册任务
 gulp.task(dev); // 开发阶段监听变化`
 gulp.task(buildCss); // 重新编译所有less
