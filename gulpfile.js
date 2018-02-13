@@ -8,7 +8,7 @@
  */
 'use strict';
 var path  = require('path');
-var appPath = 'public/';
+var appPath = 'app/public/';
 
 // 基础类
 var glob       = require('glob');
@@ -43,6 +43,10 @@ var source     = require('vinyl-source-stream');
 var through2   = require('through2');
 var babelify   = require('babelify');
 var es2015     = require('babel-preset-es2015-without-strict');
+
+// 热加载相关
+var browserSync = require('browser-sync');
+var reload = browserSync.reload;
 
 // 报错抛出提示
 var errorHandler = function(err) {
@@ -148,6 +152,18 @@ function buildJs(file, callback) {
         });
 }
 
+// 监视文件改动并重新载入
+gulp.task('serve', function() {
+    browserSync({
+      server: {
+        baseDir: 'app',
+        index: '../index.html'
+      }
+    });
+  
+    gulp.watch(['views/*.html', 'public/src/**/*.less', 'public/src/**/*.js'], {cwd: 'app'}, reload);
+});
+
 // 注册任务
 gulp.task(dev); // 开发阶段监听变化`
 gulp.task(buildCss); // 重新编译所有less
@@ -155,3 +171,5 @@ gulp.task(buildJs); // 重新编译所有JS
 
 // 默认任务，先编译所有JS和CSS，然后开始监听
 gulp.task('default', gulp.series('buildCss', 'buildJs', 'dev'));
+
+gulp.task('serve', gulp.series('serve'));
