@@ -8,7 +8,7 @@
  */
 'use strict';
 var path  = require('path');
-var appPath = '../public/';
+var appPath = 'public/';
 
 // 基础类
 var glob       = require('glob');
