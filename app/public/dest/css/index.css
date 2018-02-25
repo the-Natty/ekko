@@ -57,8 +57,32 @@ ol {
 .container .content .page li {
   list-style-type: none;
 }
+.container .content .page li .key {
+  display: inline-block;
+  width: 100px;
+}
 .container .content .page .msg {
   margin: 60px;
+}
+.container .content .page .msg ul {
+  display: inline-block;
+}
+.container .content .page .msg ul > li {
+  margin-bottom: 10px;
+}
+.container .content .page .msg .myPhoto {
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: -34px;
+}
+.container .content .page .msg .myPhoto img {
+  width: 270px;
+  height: 200px;
+}
+.container .content .page .msg .tips {
+  color: #c2431c;
+  font-weight: bolder;
 }
 .container .content .footer {
   position: fixed;

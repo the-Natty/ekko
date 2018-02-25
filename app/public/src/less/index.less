@@ -56,9 +56,33 @@ body, ul, p ,ol{
         .page{
             li{
                 list-style-type: none;
+                .key{
+                    display: inline-block;
+                    width: 100px;
+                }
             }
             .msg{
                 margin: 60px;
+                ul{
+                    display: inline-block;
+                    >li{
+                        margin-bottom: 10px;
+                    }
+                }
+                .myPhoto{
+                    display: inline-block;
+                    float: right;
+                    position: relative;
+                    top: -34px;
+                    img{
+                        width: 270px;
+                        height: 200px;
+                    }
+                }
+                .tips{
+                    color: #c2431c;
+                    font-weight: bolder;
+                }
             }
         }
 
