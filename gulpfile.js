@@ -156,8 +156,8 @@ function buildJs(file, callback) {
 gulp.task('serve', function() {
     browserSync({
       server: {
-        baseDir: 'app',
-        index: '../index.html'
+        baseDir: '../Chuck1003.github.io',
+        index: 'index.html'
       }
     });
   
