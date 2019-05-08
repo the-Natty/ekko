@@ -11,37 +11,24 @@ var path  = require('path');
 var appPath = 'app/public/';
 
 // 基础类
-var glob       = require('glob');
-var http       = require('http');
-var request    = require('request');
-var fs         = require('fs');
 var gulp       = require('gulp');
-var FormData   = require('form-data');
 
 // 工具类
 var rename     = require("gulp-rename");
 var moment     = require("moment");
-var colors     = require("colors/safe");
-var del        = require('del');
 var assign     = require('lodash.assign');
-var archiver   = require('archiver');
 
 // gulp插件
-var minifycss  = require('gulp-minify-css');
-var rev        = require('gulp-rev');
-var base64     = require('gulp-base64');
 var less       = require('gulp-less');
 var notify     = require('gulp-notify');
 var plumber    = require('gulp-plumber');
+var colors     = require('colors/safe');
 
 // browserify相关
 var watchify   = require('watchify');
 var browserify = require('browserify');
-var uglify     = require('gulp-uglify');
-var buffer     = require('vinyl-buffer');
-var source     = require('vinyl-source-stream');
-var through2   = require('through2');
 var babelify   = require('babelify');
+var through2   = require('through2');
 var es2015     = require('babel-preset-es2015-without-strict');
 
 // 热加载相关
@@ -160,7 +147,7 @@ gulp.task('serve', function() {
         index: 'index.html'
       }
     });
-  
+
     gulp.watch(['views/*.html', 'public/src/**/*.less', 'public/src/**/*.js'], {cwd: 'app'}, reload);
 });
 

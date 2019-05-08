@@ -57,10 +57,6 @@ ol {
 .container .content .page li {
   list-style-type: none;
 }
-.container .content .page li .key {
-  display: inline-block;
-  width: 100px;
-}
 .container .content .page .msg {
   margin: 60px;
 }
@@ -69,6 +65,19 @@ ol {
 }
 .container .content .page .msg ul > li {
   margin-bottom: 10px;
+}
+.container .content .page .msg ul label {
+  position: relative;
+  display: inline-block;
+  width: 82px;
+  text-align: justify;
+  text-align-last: justify;
+  margin-right: 15px;
+}
+.container .content .page .msg ul label:after {
+  content: ':';
+  position: absolute;
+  right: -6px;
 }
 .container .content .page .msg .myPhoto {
   display: inline-block;
