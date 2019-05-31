@@ -143,7 +143,7 @@ function buildJs(file, callback) {
 gulp.task('serve', function() {
     browserSync({
       server: {
-        baseDir: '../Chuck1003.github.io',
+        baseDir: '../ekko.github.io',
         index: 'index.html'
       }
     });

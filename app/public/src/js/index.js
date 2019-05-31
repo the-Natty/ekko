@@ -1,10 +1,12 @@
-$(document).ready(function() {
-	$('#fullpage').fullpage({
-        sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke'],
-    });
-});
+window.onload = function() {
+    function setBg(){
+        var bgImgPath = '/app/public/img/p' + parseInt(Math.random() * 6) + '.jpg';
+        document.getElementById('app').setAttributeNS('', 'style', 'background-image: url(' + bgImgPath + ')');
+    }
 
-$('body')
-    .on('click', '.J_unOpen', function(){
-        swal('技能,作品,联系我 暂未开放入口！');
-    })
+    function init(){
+        setBg();
+    }
+
+    init();
+}

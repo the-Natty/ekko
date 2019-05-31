@@ -1,0 +1,66 @@
+body,
+h2,
+ul,
+p,
+ol {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container .page li {
+  list-style-type: none;
+}
+.container .page .msg ul {
+  display: inline-block;
+}
+.container .page .msg ul > li {
+  margin-bottom: 10px;
+}
+.container .page .msg ul label {
+  position: relative;
+  display: inline-block;
+  width: 82px;
+  text-align: justify;
+  text-align-last: justify;
+  margin-right: 15px;
+}
+.container .page .msg ul label:after {
+  content: ':';
+  position: absolute;
+  right: -6px;
+}
+.container .page .msg .myPhoto {
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: -24px;
+}
+.container .page .msg .myPhoto img {
+  width: 270px;
+  height: 200px;
+}
+.container .page .msg .tips {
+  color: #c2431c;
+  font-weight: bolder;
+}
+.container .page1 {
+  background: #1abc9c;
+}
+.container .page2 {
+  background: #3498db;
+}
+.container .page3 {
+  background: #2ecc71;
+}
+.container .page4 {
+  background: #4BBFC3;
+}
+.container .page5 {
+  background: #f2f2f2;
+}
+.none {
+  display: none;
+}

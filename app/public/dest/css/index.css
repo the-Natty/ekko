@@ -1,110 +1,83 @@
-body,
-ul,
-p,
-ol {
+* {
   margin: 0;
   padding: 0;
 }
-.container .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 40px;
-  font-size: 14px;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 100;
-}
-.container .header .banner {
-  display: inline-block;
-  float: left;
-  line-height: 40px;
-  text-align: center;
-}
-.container .header .log {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  background: url('../../img/fe.jpg');
-  background-size: contain;
-}
-.container .header .fast {
-  position: relative;
-  left: 50%;
-  margin-left: -176px;
-}
-.container .header .fast li {
-  display: block;
-  float: left;
-}
-.container .header .fast li a {
-  padding: 0 24px;
-  border-right: solid 1px #eee;
-  text-decoration: none;
-  color: #eee;
-  outline: none;
-}
-.container .header .fast li a.active {
-  color: #c2431c;
-}
-.container .header .fast li a.last {
-  border: none;
-}
-.container .content {
+html,
+body,
+#app {
   width: 100%;
   height: 100%;
 }
-.container .content .page li {
-  list-style-type: none;
+#app {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.container .content .page .msg {
-  margin: 60px;
-}
-.container .content .page .msg ul {
-  display: inline-block;
-}
-.container .content .page .msg ul > li {
-  margin-bottom: 10px;
-}
-.container .content .page .msg ul label {
-  position: relative;
-  display: inline-block;
-  width: 82px;
-  text-align: justify;
-  text-align-last: justify;
-  margin-right: 15px;
-}
-.container .content .page .msg ul label:after {
-  content: ':';
+.container {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 1.2em;
+  color: #fefefe;
+  overflow: auto;
   position: absolute;
-  right: -6px;
+  left: 50%;
+  top: 50%;
+  width: auto;
+  height: auto;
+  max-height: 80%;
+  min-width: 82%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: height 1s ease;
+  transition: top 1s ease;
+  padding: 15px 10px;
 }
-.container .content .page .msg .myPhoto {
-  display: inline-block;
-  float: right;
-  position: relative;
-  top: -24px;
+.container header {
+  border-bottom: 1px solid #d3d3d3;
+  margin: 0 10px 15px 10px;
 }
-.container .content .page .msg .myPhoto img {
-  width: 270px;
-  height: 200px;
-}
-.container .content .page .msg .tips {
-  color: #c2431c;
+.container header h1 {
+  font-size: 1.4rem;
+  line-height: 90%;
+  color: #fefefe;
+  float: none;
+  margin: auto;
+  padding-top: 0.4rem;
+  text-align: center;
   font-weight: bolder;
+  text-shadow: 0 1px 1px #333;
 }
-.container .content .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+.container header p {
+  text-align: center;
+  color: #fefefe;
+  line-height: 24px;
+  text-shadow: 0 1px 1px #333;
+}
+.container section li {
+  background: rgba(0, 0, 0, 0.5);
+  margin: 20px 10px;
+  padding: 8px 10px;
+  list-style: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.container section li a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
   width: 100%;
-  height: 52px;
-  font-size: 12px;
-  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
 }
-.container .content .footer .msg {
-  padding: 9px 0 0 20%;
+.container footer {
+  text-align: right;
+  padding-top: 10px;
+  margin: 15px 10px 0 10px;
+  border-top: solid 1px #d3d3d3;
 }
-.none {
-  display: none;
+@media (min-width: 771px) {
+  .container {
+    min-width: 40%;
+  }
 }
