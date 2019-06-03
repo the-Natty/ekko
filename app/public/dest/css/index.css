@@ -65,10 +65,16 @@ body,
 }
 .container section li a {
   text-decoration: none;
-  color: #fff;
   display: inline-block;
   width: 100%;
   height: 100%;
+  color: #fff;
+}
+.container section li:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+.container section li:hover a {
+  color: #333;
 }
 .container footer {
   text-align: right;
