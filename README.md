@@ -1,4 +1,4 @@
-# [访问主页](ekko.cxfei.cc)
+# [访问主页](http://www.ekko.cxfei.cc)
 # Github
 
 $ gulpfile.js 为构建，构建APP文件夹下src->dest
