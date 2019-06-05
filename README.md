@@ -1,4 +1,5 @@
-# Github为本，个人工作历程
+# 访问 ekko.cxfei.cc
+# Github
 
 $ gulpfile.js 为构建，构建APP文件夹下src->dest
 $ CNAME 为域名配置，如同域名解析ip一般，ip这边同样要注明域名
