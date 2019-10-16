@@ -160,68 +160,68 @@
 
     .page{
       li{
-          list-style-type: none;
+        list-style-type: none;
       }
       .msg{
-          ul{
-              display: inline-block;
-              >li{
-                  margin-bottom: 10px;
-              }
-              label {
-                  position: relative;
-                  display: inline-block;
-                  width: 82px;
-                  text-align: justify;
-                  text-align-last: justify;
-                  margin-right: 15px;
-              }
-              label:after {
-                  content: ':';
-                  position: absolute;
-                  right: -6px;
-              }
+        ul{
+          display: inline-block;
+          >li{
+            margin-bottom: 10px;
           }
-          .myPhoto{
-              display: inline-block;
-              position: relative;
-              top: -24px;
-              img{
-                  width: 270px;
-                  height: 200px;
-              }
+          label {
+            position: relative;
+            display: inline-block;
+            width: 82px;
+            text-align: justify;
+            text-align-last: justify;
+            margin-right: 15px;
           }
-          .tips{
-              color: #c2431c;
-              font-weight: bolder;
+          label:after {
+            content: ':';
+            position: absolute;
+            right: -6px;
           }
+        }
+        .myPhoto{
+          display: inline-block;
+          position: relative;
+          top: -24px;
+          img{
+            width: 270px;
+            height: 200px;
+          }
+        }
+        .tips{
+          color: #c2431c;
+          font-weight: bolder;
+        }
       }
   }
 
   // mixin defined
   .for(@list, @code) {
-      & {
-          .loop(@i:1) when (@i =< length(@list)) {
-              @value: extract(@list, @i);
+    & {
+      .loop(@i:1) when (@i =< length(@list)) {
+        @value: extract(@list, @i);
 
-              @code();
+        @code();
 
-              .loop(@i + 1);
-          }
-
-          .loop();
+        .loop(@i + 1);
       }
+
+      .loop();
+    }
   }
 
   @colors: #1abc9c, #3498db, #2ecc71, #4BBFC3, #f2f2f2;
   .for(@colors, {
-      .page@{i} {
-          background: @value;
-      }
+    .page@{i} {
+      background: @value;
+    }
   });
 
   }
   .none{
-      display: none;
+    display: none;
   }
 </style>

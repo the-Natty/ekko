@@ -1,8 +1,10 @@
 # Ekko
 
-## folder 目录放资料
+## 提交前运行 yarn build!!!
+
+## folder 资料
 ```
-Git.md  git操作命令文档
+Git.md > git操作命令文档
 ```
 
 ## Project setup

@@ -39,6 +39,7 @@ export default {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.3);
   }
   .container {
     background-color: rgba(0,0,0,0.3);
