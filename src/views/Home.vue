@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-wrap" :style="`background-image:url(${bgImgPath[aIndex]})`">
+  <div class="bg-wrap" :style="`background-image:url(${bgImgPath})`">
     <div class="container">
       <header>
         <h1>Ekko的个人博客</h1>
@@ -20,30 +20,13 @@
 </template>
 
 <script>
-import p0 from '@/assets/p0.jpg'
-import p1 from '@/assets/p1.jpg'
-import p2 from '@/assets/p2.jpg'
-import p3 from '@/assets/p3.jpg'
 import p4 from '@/assets/p4.jpg'
-import p5 from '@/assets/p5.jpg'
 
 export default {
   name: 'home',
   data() {
     return {
-      bgImgPath: [p0, p1, p2, p3, p4, p5],
-      aIndex: 0
-    }
-  },
-  created() {
-    this.changeBg()
-  },
-  methods: {
-    changeBg() {
-      let that = this
-      setInterval(()=> {
-        that.aIndex = that.aIndex > 4 ? 0 : that.aIndex + 1
-      }, 3000)
+      bgImgPath: p4
     }
   }
 }

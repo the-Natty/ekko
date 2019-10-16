@@ -135,7 +135,7 @@
             <ol>
               <li><label class="tips">简历附件</label></li>
               <li><a href="https://github.com/bfek">GitHub</a></li>
-              <li><a href="../assets/file/陈小飞简历 前端工程师.pdf">下载简历附件（pdf）</a></li>
+              <li><a href="../assets/file/陈小飞简历 前端工程师.pdf" @click="()=> { return false; }">下载简历附件（pdf）</a></li>
               <li><a href="../assets/file/陈小飞简历 前端工程师.docx">下载简历附件（word）</a></li>
             </ol>
           </li>
@@ -146,7 +146,7 @@
     <div class="page page5">
       <div class="msg">
         <p>Emails: 19901704827@163.com</p>
-        <p>Address: 上海市嘉定区江桥镇泰宸沙河茗苑</p>
+        <p>Address: 上海市浦东新区成山路668号恒大星级公寓1期</p>
       </div>
     </div>
 
@@ -184,7 +184,6 @@
           }
           .myPhoto{
               display: inline-block;
-              float: right;
               position: relative;
               top: -24px;
               img{
