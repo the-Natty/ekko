@@ -1,9 +1,29 @@
-# [访问主页](http://www.ekko.cxfei.cc)
+# temp
 
-$ gulpfile.js 为构建，构建APP文件夹下src->dest
-$ CNAME 为域名配置，如同域名解析ip一般，ip这边同样要注明域名
-$ index 为主页，视图在View文件夹内
+## Project setup
+```
+npm install
+```
 
-$ npm i ->
-gulp serve 启动本地服务
-gulp 即可监听修改编译
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

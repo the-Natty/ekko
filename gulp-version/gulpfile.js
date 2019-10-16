@@ -4,7 +4,7 @@
  *     1、开发阶段执行gulp即可，会自动监听主文件和子模块的变化后编译，但不监听主文件所在目录以外的模块变更
 *      2、待续...
  * author：cxf15062@ly.com
- * 版权所有：chuck
+ * 版权所有：ekko
  */
 'use strict';
 var path  = require('path');
@@ -143,7 +143,7 @@ function buildJs(file, callback) {
 gulp.task('serve', function() {
     browserSync({
       server: {
-        baseDir: '../ekko.github.io',
+        baseDir: './',
         index: 'index.html'
       }
     });
