@@ -1,4 +1,9 @@
-# temp
+# Ekko
+
+## folder 目录放资料
+```
+Git.md  git操作命令文档
+```
 
 ## Project setup
 ```

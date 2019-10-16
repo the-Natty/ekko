@@ -22,6 +22,14 @@ export const router = new Router({
       meta: {
         title: 'About Ekko'
       }
+    },
+    {
+      path: '*',
+      name: '404',
+      component: () => import('./views/404.vue'),
+      meta: {
+        title: '404 Page'
+      }
     }
   ]
 })

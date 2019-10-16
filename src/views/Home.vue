@@ -8,8 +8,8 @@
 
       <section>
         <ul>
-          <li><router-link to="/about">» 日志：dev</router-link></li>
-          <li><router-link to="/about">» 日记：文艺</router-link></li>
+          <li><router-link to="/dev">» 日志：dev</router-link></li>
+          <li><router-link to="/art">» 日记：文艺</router-link></li>
           <li><router-link to="/about">» 简历：历程</router-link></li>
         </ul>
       </section>
