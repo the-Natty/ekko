@@ -47,18 +47,18 @@
           </li>
         </ul>
       </div>
-  </div>
+    </div>
 
-  <div class="page page2">
+    <div class="page page2">
       <div class="msg">
         <!-- <h2>工作技能</h2> -->
         <ul>
           <li>
             <ol>
-                <li><label class="tips">基础</label></li>
-                <li><label>HTML</label>手写规范的HTML文档</li>
-                <li><label>CSS</label>手写兼容的CSS、Less样式</li>
-                <li><label>JS</label>手写脚本文件</li>
+              <li><label class="tips">基础</label></li>
+              <li><label>HTML</label>手写规范的HTML文档</li>
+              <li><label>CSS</label>手写兼容的CSS、Less样式</li>
+              <li><label>JS</label>手写脚本文件</li>
             </ol>
           </li>
           <li>
@@ -70,76 +70,76 @@
             </ol>
           </li>
           <li>
-              <ol>
-                  <li><label class="tips">工具</label></li>
-                  <li><label>Git</label>Git Extension熟练使用、代码托管，个人GitHub，本页即个人Git Pages</li>
-                  <li><label>Build</label>gulp/grunt等构建工具的使用，本页脚本、样式即使用gulp构建；热加载开发</li>
-                  <li><label>Tools</label>Sublime Text/Visual Studio [2012/15/17/Code]等开发工具使用</li>
-              </ol>
+            <ol>
+              <li><label class="tips">工具</label></li>
+              <li><label>Git</label>Git Extension熟练使用、代码托管，个人GitHub，本页即个人Git Pages</li>
+              <li><label>Build</label>gulp/grunt等构建工具的使用，本页脚本、样式即使用gulp构建；热加载开发</li>
+              <li><label>Tools</label>Sublime Text/Visual Studio [2012/15/17/Code]等开发工具使用</li>
+            </ol>
           </li>
         </ul>
       </div>
-  </div>
+    </div>
 
-  <div class="page page3">
+    <div class="page page3">
       <div class="msg">
-          <!-- <h2>工作经验</h2> -->
-          <ul>
-              <li>
-                  <ol>
-                      <li><label>携程旅游</label>2018.04-至今</li>
-                      <li><label>同程旅游</label>2015.10-2018.3</li>
-                  </ol>
-              </li>
-              <li>
-                  <ol>
-                      <li><label class="tips">工作内容</label></li>
-                      <li>H5开发：m.ly.com大首页包团定制 <a href="https://m.ly.com/dujia/dingzhiyou/index" target="_blank">包团定制</a> (请使用手机扫码下图)</li>
-                      <li style="padding: 5px 0;"><img src="../assets/btdz.png" style="width:100px;height:100px;"></li>
-                      <li>PC开发：gny.ly.com功能开发</li>
-                      <li>后台开发：供应商管理系统、订单管理系统开发；MVC开发、使用Vue/Angular开发单页面</li>
-                  </ol>
-              </li>
-              <li>
-                <ol>
-                  <li><label class="tips">求职意向</label></li>
-                  <li><label>地点</label>上海</li>
-                  <li><label>岗位</label>前端工程师</li>
-                  <li><label>时间</label>大概二个礼拜可入职</li>
-                  <li><label>薪资</label>面谈 O(∩_∩)O</li>
-                </ol>
-              </li>
-          </ul>
+        <!-- <h2>工作经验</h2> -->
+        <ul>
+          <li>
+            <ol>
+              <li><label>携程旅游</label>2018.04-至今</li>
+              <li><label>同程旅游</label>2015.10-2018.3</li>
+            </ol>
+          </li>
+          <li>
+            <ol>
+              <li><label class="tips">工作内容</label></li>
+              <li>H5开发：m.ly.com大首页包团定制 <a href="https://m.ly.com/dujia/dingzhiyou/index" target="_blank">包团定制</a> (请使用手机扫码下图)</li>
+              <li style="padding: 5px 0;"><img src="../assets/btdz.png" style="width:100px;height:100px;"></li>
+              <li>PC开发：gny.ly.com功能开发</li>
+              <li>后台开发：供应商管理系统、订单管理系统开发；MVC开发、使用Vue/Angular开发单页面</li>
+            </ol>
+          </li>
+          <li>
+            <ol>
+              <li><label class="tips">求职意向</label></li>
+              <li><label>地点</label>上海</li>
+              <li><label>岗位</label>前端工程师</li>
+              <li><label>时间</label>大概二个礼拜可入职</li>
+              <li><label>薪资</label>面谈 O(∩_∩)O</li>
+            </ol>
+          </li>
+        </ul>
       </div>
-  </div>
+    </div>
 
-  <div class="page page4">
+    <div class="page page4">
       <div class="msg">
-          <!-- <h2>学历其他</h2> -->
-          <ul>
-              <li>
-                  <ol>
-                      <li><label class="tips">教育经历</label></li>
-                      <li><label>2012-2016</label>东华理工大学（软件工程）</li>
-                  </ol>
-              </li>
-              <li>
-                  <ol>
-                      <li><label class="tips">个人喜好</label></li>
-                      <li><label>爱好</label>电影、音乐、运动</li>
-                      <li><label>性格</label>可安静、可逗比</li>
-                      <li><label>特长</label>偶尔喜欢写点东东</li>
-                  </ol>
-              </li>
-              <li>
-                  <ol>
-                      <li><label class="tips">简历附件</label></li>
-                      <li><a href="https://github.com/bfek">GitHub</a></li>
-                      <li><a href="../assets/file/陈小飞简历 前端工程师.pdf">下载简历附件（pdf）</a></li>
-                      <li><a href="../assets/file/陈小飞简历 前端工程师.docx">下载简历附件（word）</a></li>
-                  </ol>
-              </li>
-          </ul>
+        <!-- <h2>学历其他</h2> -->
+        <ul>
+          <li>
+            <ol>
+              <li><label class="tips">教育经历</label></li>
+              <li><label>2012-2016</label>东华理工大学（软件工程）</li>
+            </ol>
+          </li>
+          <li>
+            <ol>
+              <li><label class="tips">个人喜好</label></li>
+              <li><label>爱好</label>电影、音乐、运动</li>
+              <li><label>性格</label>可安静、可逗比</li>
+              <li><label>特长</label>偶尔喜欢写点东东</li>
+            </ol>
+          </li>
+          <li>
+            <ol>
+              <li><label class="tips">简历附件</label></li>
+              <li><a href="https://github.com/bfek">GitHub</a></li>
+              <li><a href="../assets/file/陈小飞简历 前端工程师.pdf">下载简历附件（pdf）</a></li>
+              <li><a href="../assets/file/陈小飞简历 前端工程师.docx">下载简历附件（word）</a></li>
+            </ol>
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -149,6 +149,7 @@
         <p>Address: 上海市嘉定区江桥镇泰宸沙河茗苑</p>
       </div>
     </div>
+
   </div>
 </template>
 
