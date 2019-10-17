@@ -8,7 +8,7 @@ function resolve (dir) {
 module.exports = {
   configureWebpack: (config)=>{
     if(process.env.NODE_ENV == 'production') {
-      // === compress code ===
+      // === 代码压缩 ===
       config.plugins.push(
         new UglifyJsPlugin({
           uglifyOptions: {
@@ -25,7 +25,7 @@ module.exports = {
         })
       )
       
-      // === gzip ===
+      // === 开启gzip压缩 ===
       const productionGzipExtensions = ['html', 'js', 'css']
       config.plugins.push(
         new CompressionWebpackPlugin({
@@ -51,7 +51,7 @@ module.exports = {
       .set('views', resolve('src/views'))
       .end()
 
-    // === compress img ===
+    // === 图片压缩 ===
     config.module
       .rule('images')
       .use('image-webpack-loader')
