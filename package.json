@@ -26,6 +26,7 @@
     "image-webpack-loader": "^6.0.0",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
+    "loadsh": "^0.0.4",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "vue-template-compiler": "^2.6.10"
   }

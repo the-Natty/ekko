@@ -53,10 +53,6 @@ export default {
     height: auto;
     max-height: 80%;
     min-width: 82%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     transition: height 1s ease;
     transition: top 1s ease;
