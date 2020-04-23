@@ -1,122 +1,208 @@
 <template>
-  <div class="bg-wrap" :style="`background-image:url(${bgImgPath})`">
-    <div class="container">
-      <header>
-        <h1>Ekko的个人博客</h1>
-        <p>Ekko の Personal Website</p>
-      </header>
-
-      <section>
-        <ul>
-          <li><router-link to="/dev">» 日志：dev</router-link></li>
-          <li><router-link to="/art">» 日记：文艺</router-link></li>
-          <li><router-link to="/about">» 简历：历程</router-link></li>
-        </ul>
-      </section>
-
-      <footer>Contact | ekko.cxfei.cc</footer>
+  <div class="wrap">
+    <div class="banner">
+      <Carousel autoplay v-model="init" loop arrow='hover' class="banner_swipe">
+        <CarouselItem v-for="(item, index) in bgArr" :key="index">
+          <div class="demo-carousel" @click="watchFun(item.url)">
+            <img :src="item.bg" alt="">
+          </div>
+        </CarouselItem>
+      </Carousel>
+    </div>
+    <div class="introduce">
+      <h3>什么是远东</h3>
+      <p class="mt">远东（英文：Far East）是西方国家开始向东方扩张时对亚洲最东部地区的通称，他们以欧洲为中心，把东南欧、非洲东北称为“近东”，把西亚附近称为“中东”，把更远的东方称为“远东”。</p>
+      <p>西方国家开始向东方扩张时对亚洲最东部地区的通称。当今编程世界，技术大都由西方传入东方！</p>
+    </div>
+    <div class="friends">
+      <div class="headBar">曾经的Family</div>
+      <ul class="friend-items">
+        <li>
+          <div class="img"></div>
+          <div class="msg">
+            <p class="name">同程</p>
+            <p class="age">2.5年 前端开发</p>
+            <p class="tip tip1">2015年10-2018年3月</p>
+            <p class="tip">实习->主力</p>
+            <p class="tip">初入职场，默默学习</p>
+          </div>
+        </li>
+        <li>
+          <div class="img"></div>
+          <div class="msg">
+            <p class="name">携程</p>
+            <p class="age">1.2年 前端开发</p>
+            <p class="tip tip1">2018年4月-2019年6月</p>
+            <p class="tip">主力->前端负责人</p>
+            <p class="tip">攻略主搜前端负责人</p>
+          </div>
+        </li>
+        <li>
+          <div class="img"></div>
+          <div class="msg">
+            <p class="name">爱库存</p>
+            <p class="age">1年+  前端开发</p>
+            <p class="tip tip1">2019年6月-至今</p>
+            <p class="tip">主力->领域负责人</p>
+            <p class="tip">销冠领域前端负责人</p>
+          </div>
+        </li>
+      </ul>
+      <div class="watch-btn" @click="watchExp">查看经历</div>
     </div>
   </div>
 </template>
 
 <script>
-import p4 from '@/assets/p4.jpg'
-
+import b2 from '../common/img/ly2.jpg'
+import b3 from '../common/img/ctrip2.png'
+import b4 from '../common/img/akc.jpg'
 export default {
-  name: 'home',
   data() {
     return {
-      bgImgPath: p4
+      init: 0,
+      bgArr: [{
+        bg: b2,
+        url: 'https://www.ly.com/'
+      }, {
+        bg: b3,
+        url: 'https://www.ctrip.com/'
+      }, {
+        bg: b4,
+        url: 'https://www.aikucun.com/'
+      }]
+    }
+  },
+  mounted() {
+    window.scrollTo(0, 0)
+  },
+  methods: {
+    watchFun(url) {
+      window.open(url, '_blank')
+    },
+    watchExp() {
+      this.$router.push('/experience')
     }
   }
 }
 </script>
 
-<style lang="less" scoped>
-  .bg-wrap {
-    height: 100%;
-    width: 100%;    
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .container {
-    background-color: rgba(0,0,0,0.3);
-    border-radius: 1.2em;
-    color: #fefefe;
-    overflow: auto;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: auto;
-    height: auto;
-    max-height: 80%;
-    min-width: 82%;
-    transform: translate(-50%, -50%);
-    transition: height 1s ease;
-    transition: top 1s ease;
-    padding: 15px 10px;
-
-    header {
-      border-bottom: 1px solid #d3d3d3;
-      margin: 0 10px 15px 10px;
-      h1 {
-        font-size: 1.4rem;
-        line-height: 90%;
-        color: #fefefe;
-        float: none;
-        margin: auto;
-        padding-top: 0.4rem;
-        text-align: center;
-        font-weight: bolder;
-        text-shadow: 0 1px 1px #333;
+<style scoped lang="less">
+  .wrap {
+    width: 100%;
+    background: #fff;
+    .banner {
+      width: 100%;
+      height: 360px;
+      .banner_swipe {
+        height: 360px;
+        width: 100%;
+        img {
+          height: 360px;
+          width: 100%;
+        }
+      }
+    } 
+    .introduce {
+      text-align: center;
+      h3 {
+        font-size:36px;
+        font-family:PingFang-SC-Heavy,microsoft yahei,arial,hiragino sans gb;
+        font-weight:800;
+        color:#333;
+        line-height:50px;
+        margin-top: 69px;
       }
       p {
-        text-align: center;
-        color: #fefefe;
-        line-height: 24px;
-        text-shadow: 0 1px 1px #333;
+        font-size:16px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:#666;
+        line-height:28px;
+        &.mt {
+          margin-top: 16px;
+        }
       }
     }
-
-    section {
-      li {
-        background: rgba(0, 0, 0, 0.5);
-        margin: 20px 10px;
-        padding: 8px 10px;
-        list-style: none;
-        border-radius: 6px;
-        cursor: pointer;
-
-        a {
-          text-decoration: none;
-          display: inline-block;
-          width: 100%;
+    .headBar {
+      font-size:36px;
+      font-family:PingFang-SC-Heavy,microsoft yahei,arial,hiragino sans gb;
+      font-weight:800;
+      color:#333;
+      line-height:50px;
+      margin-top: 69px;
+    }
+    .friends {
+      .friend-items {
+        height: 330px;
+        margin-top: 47px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        li {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          width: 300px;
           height: 100%;
-          color: #fff;
-        }
-
-        &:hover {
-          background: rgba(255, 255, 255, 0.8);
-          a {
-              color: #333;
+          text-align: left;
+          .img {
+            width: 100%;
+            height: 190px;
+            background-size: 100% 100%!important;
+          }
+          .msg {
+            padding: 10px 0 12px 16px;
+            background: #F5F5F5;
+            p.name {
+              font-size:18px;
+              font-family:PingFang-SC-Heavy,microsoft yahei,arial,hiragino sans gb;
+              font-weight:800;
+              color:#333;
+              line-height:25px;
+            }
+            p.age {
+              font-size:14px;
+              font-family:PingFangSC-Regular;
+              font-weight:400;
+              color:#666;
+              line-height:22px;
+            }
+            p.tip1 {
+              margin-top: 7px;
+            }
+            p.tip {
+              line-height: 22px;
+              font-size: 14px;
+            }
+          }
+          &:first-child .img {
+            background-image: url('../common/img/tcLogo.jpg');
+          }
+          &:nth-child(2) .img {
+            background-image: url('../common/img/xcLogo.jpg');
+          }
+          &:last-child .img{
+            background-image: url('../common/img/akcLogo.jpg');
           }
         }
       }
-    }
-
-    footer {
-      text-align: right;
-      padding-top: 10px;
-      margin: 15px 10px 0 10px;
-      border-top: solid 1px #d3d3d3;
-    }
-  }
-
-  @media (min-width: 771px){
-    .container {
-      min-width: 40%;
+      .watch-btn {
+        margin: 40px 0 40px 410px;
+        width:180px;
+        height:44px;
+        background:#EC2232;
+        border-radius:2px;
+        font-size:14px;
+        font-family:PingFangSC-Regular;
+        font-weight:400;
+        color:#fff;
+        line-height:44px;
+        cursor: pointer;
+        &:hover {
+          background:#FC3142;
+        }
+      }
     }
   }
 </style>

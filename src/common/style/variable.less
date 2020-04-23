@@ -1,0 +1,17 @@
+.bg-image(@url) {
+  background-image: ~"url('@{url}.png')!important";
+  @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+    background-image:~"url('@{url}@2x.png')!important";
+  }
+  @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+    background-image:~"url('@{url}@3x.png')!important";
+  }
+}
+.line-hidden(@num) {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: @num;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+}

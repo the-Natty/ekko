@@ -1,6 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+// 解决两次访问相同路由地址报错
+const originalPush = Router.prototype.push
+Router.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => err)
+}
+
 Vue.use(Router)
 
 export const router = new Router({
@@ -10,25 +16,49 @@ export const router = new Router({
     {
       path: '/',
       name: 'home',
-      component: () => import('./views/Home.vue'),
+      component: () => import('./views/home.vue'),
       meta: {
-        title: 'Ekko の Page'
+        title: '远东'
+      }
+    },
+    {
+      path: '/experience',
+      name: 'experience',
+      component: () => import('./views/experience.vue'),
+      meta: {
+        title: '经历'
+      }
+    },
+    {
+      path: '/project',
+      name: 'project',
+      component: () => import('./views/project.vue'),
+      meta: {
+        title: '项目'
+      }
+    },
+    {
+      path: '/project/:id',
+      name: 'project',
+      component: () => import('./views/projectDetail.vue'),
+      meta: {
+        title: '项目详情'
       }
     },
     {
       path: '/about',
       name: 'about',
-      component: () => import('./views/About.vue'),
+      component: () => import('./views/about.vue'),
       meta: {
-        title: 'About Ekko'
+        title: '关于'
       }
     },
     {
       path: '*',
-      name: '404',
-      component: () => import('./views/404.vue'),
+      name: 'error',
+      component: () => import('./views/error.vue'),
       meta: {
-        title: '404 Page'
+        title: '迷路了'
       }
     }
   ]
@@ -39,6 +69,6 @@ router.afterEach((to) => {
   if (to.meta && to.meta.title) {
     document.title = to.meta.title
   }else {
-    document.title = 'Ekko の Page'
+    document.title = '远东'
   }
 })
