@@ -1,37 +1,26 @@
 <template>
   <div class="wrap">
-    <div class="banner"></div>
     <div class="cluture">
       <div class="head">我们的职场</div>
       <div class="msg-content">
-        <p class="t1"><span>加入饷店开启全新职业生涯，</span><span class="youxiu">与优秀的人一起做优秀的事。</span></p>
+        <p class="t1"><span>加入前端团队开启全新职业生涯，</span><span class="youxiu">与优秀的人一起做优秀的事。</span></p>
         <ul>
           <li>
-            <p>我们致力于为社会创造更大价值，打造全新电商生态圈。我们砥砺前行，勇敢无畏，走出了属于自己的崭新道路。</p>
+            <p>我们致力于为用户提供顶级UI，打造全新互联网生态圈。我们砥砺前行，勇敢无畏，走出了属于自己的崭新道路。</p>
           </li>
           <li>
-            <h4>饷店的招商达人们</h4>
-            <p>不断拓展品牌资源、为品牌赋能，致力于打造真正优质的货源。</p>
+            <h4>同程的技术达人们</h4>
+            <p>不断创新，不断的寻找最合适的技术栈，一直在学习在进步，跟上团队步伐，做出贡献。</p>
           </li>
         </ul>
         <ul>
           <li>
-            <h4>饷店的技术大牛们</h4>
-            <p>用他们严谨而创新的思维，通过一串串代码，构建了饷店这个坚实的产品。</p>
+            <h4>携程的技术大牛们</h4>
+            <p>用他们严谨而创新的思维，通过一串串代码，构建了携程搜索这个坚实的产品。</p>
           </li>
           <li>
-            <h4>饷店的品控大神们</h4>
-            <p>“确保交付品质”是他们的首要信念。从饷店发出的每件商品，都要经过他们的火眼金睛。</p>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <h4>饷店的增长大咖们</h4>
-            <p>洞悉行业前沿趋势，抢占业务拓展赛道，他们个个身怀独门绝技，推动饷店不断变化。</p>
-          </li>
-          <li>
-            <h4>饷店的市场大牛们</h4>
-            <p>擅长爆款营销/社群营销，让合伙人的饷店的市场影响力无所不在。</p>
+            <h4>爱库存的码农大神们</h4>
+            <p>“确保交付品质”是他们的首要信念。从业务角度出发，第一时间提供顶级用户界面。</p>
           </li>
         </ul>
       </div>
@@ -48,12 +37,18 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 export default {
   data() {
-    return {}
+    return {
+    }
   },
   mounted() {
+    this.setTab(3)
     window.scrollTo(0, 0)
+  },
+  methods: {
+    ...mapMutations(['setTab'])
   }
 }
 </script>
@@ -62,12 +57,6 @@ export default {
   .wrap {
     width: 100%;
     background: #fff;
-    .banner {
-      width: 100%;
-      padding-bottom: 54%;
-      background-image: url('../common/img/xcjike.jpg');
-      background-size: 100% 100%;
-    }
     .cluture {
       width: 100%;
       padding-bottom: 60px;
@@ -77,7 +66,7 @@ export default {
         font-weight:800;
         color:#2B2E33;
         line-height:50px;
-        padding: 78px 0 50px 0;
+        padding: 38px 0 50px 0;
       }
       .msg-content {
         width: 100%;
@@ -135,25 +124,25 @@ export default {
           }
           &.lineOne {
             li:first-child {
-              background-image: url('../common/img/about6.png');
+              background-image: url('../common/img/about1.jpg');
             }
             li:nth-child(2) {
-              background-image: url('../common/img/about2.png');
+              background-image: url('../common/img/about3.jpg');
             }
             li:last-child {
-              background-image: url('../common/img/about5.png');
+              background-image: url('../common/img/about2.jpg');
             }
           }
           &.lineTwo {
             margin-top: 14px;
             li:first-child {
-              background-image: url('../common/img/about3.png');
+              background-image: url('../common/img/about4.jpg');
             }
             li:nth-child(2) {
-              background-image: url('../common/img/about4.png');
+              background-image: url('../common/img/about6.jpg');
             }
             li:last-child {
-              background-image: url('../common/img/about1.png');
+              background-image: url('../common/img/about5.jpg');
             }
           }
         }

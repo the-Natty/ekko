@@ -109,7 +109,7 @@ export default {
   }
   .right {
     img {
-      width: 96px;
+      width: 98px;
       height: 101px;
     }
   }

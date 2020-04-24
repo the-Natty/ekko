@@ -11,8 +11,9 @@
     </div>
     <div class="introduce">
       <h3>什么是远东</h3>
-      <p class="mt">远东（英文：Far East）是西方国家开始向东方扩张时对亚洲最东部地区的通称，他们以欧洲为中心，把东南欧、非洲东北称为“近东”，把西亚附近称为“中东”，把更远的东方称为“远东”。</p>
-      <p>西方国家开始向东方扩张时对亚洲最东部地区的通称。当今编程世界，技术大都由西方传入东方！</p>
+      <p class="mt">远东（英文：Far East）是西方国家开始向东方扩张时对亚洲最东部地区的通称。</p>
+      <p>编程世界，技术大都由西方传入东方！</p>
+      <p>我：远东的FE（前端）</p>
     </div>
     <div class="friends">
       <div class="headBar">曾经的Family</div>
@@ -24,7 +25,7 @@
             <p class="age">2.5年 前端开发</p>
             <p class="tip tip1">2015年10-2018年3月</p>
             <p class="tip">实习->主力</p>
-            <p class="tip">初入职场，默默学习</p>
+            <p class="tip">初入职场，默默成长</p>
           </div>
         </li>
         <li>
@@ -54,9 +55,9 @@
 </template>
 
 <script>
-import b2 from '../common/img/ly2.jpg'
-import b3 from '../common/img/ctrip2.png'
-import b4 from '../common/img/akc.jpg'
+import b2 from '../common/img/company1.jpg'
+import b3 from '../common/img/company2.jpg'
+import b4 from '../common/img/company3.jpg'
 export default {
   data() {
     return {
@@ -177,13 +178,13 @@ export default {
             }
           }
           &:first-child .img {
-            background-image: url('../common/img/tcLogo.jpg');
+            background-image: url('../common/img/logotc.jpg');
           }
           &:nth-child(2) .img {
-            background-image: url('../common/img/xcLogo.jpg');
+            background-image: url('../common/img/logoxc.jpg');
           }
           &:last-child .img{
-            background-image: url('../common/img/akcLogo.jpg');
+            background-image: url('../common/img/logoakc.jpg');
           }
         }
       }
