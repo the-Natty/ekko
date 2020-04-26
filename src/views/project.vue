@@ -1,86 +1,155 @@
 <template>
   <div class="wrap">
-    <div class="banner"></div>
-
-    <div class="rights">
-      <h1>经销商5大特权</h1>
-      <ul>
-        <li class="aa">
-          <div class="img1"></div>
-          <h3>海量资源</h3>
-          <p>优质货源任意选择</p>
+    <div class="ruless">
+      <div class="headBar">同程</div>
+      <ul class="friend-items">
+        <li>
+          <div class="msg">
+            <p class="name">1.营销专栏</p>
+            <p class="age">营销活动宣传落地页开发 & 专题模板项目</p>
+          </div>
         </li>
-        <li class="aa">
-          <div class="img2"></div>
-          <h3>收入丰厚</h3>
-          <p>价格自定义</p>
+        <li>
+          <div class="msg detail">
+            <Poptip trigger="hover" placement="right" width="320" content="content">              
+              <a href="https://m.ly.com/tailor/" target="_blank">
+                <p class="name">2.包团定制</p>
+                <p class="age">定制旅游，团队报名，只玩自己想玩的。</p>
+              </a>
+              <div slot="content">
+                <img src="../common/img/dz.png" style="width: 100%; height: 100%">
+              </div>
+            </Poptip>
+          </div>
         </li>
-        <li class="aa">
-          <div class="img3"></div>
-          <h3>培训支持</h3>
-          <p>行业大咖导师1对1培训</p>
-          <p>帮助销售业绩翻倍</p>
+        <li>
+          <div class="msg detail">
+            <Poptip trigger="hover" placement="right" width="420" content="content">
+              <a href="https://gny.ly.com/line/t1j4p1030735c321.html?pos=4" target="_blank">
+                <p class="name">3.产品详情点评</p>
+                <p class="age">官网国内游产品详情页，<strong style="font-weight: bolder;">用户点评</strong>。</p>
+              </a>
+              <div slot="content">
+                <img src="../common/img/dp.png" style="width: 100%; height: 100%">
+              </div>
+            </Poptip>
+          </div>
         </li>
-        <li class="aa">
-          <div class="img4"></div>
-          <h3>市场支持</h3>
-          <p>一件代发，专业售后</p>
-          <p>轻松解决后顾之忧</p>
-        </li>
-        <li class="aa">
-          <div class="img5"></div>
-          <h3>市场巨大</h3>
-          <p>行业前景广阔</p>
-          <p>开启全新创业路</p>
+        <li>
+          <div class="msg">
+            <p class="name">4.eOrder皓月</p>
+            <p class="age">国旅集团订单后台管理系统，管理所有订单信息。</p>
+          </div>
         </li>
       </ul>
     </div>
 
     <div class="ruless">
-      <div class="headBar">经销商条款</div>
+      <div class="headBar">携程</div>
       <ul class="friend-items">
         <li>
           <div class="msg">
-            <p class="name">1.具备公司资质</p>
-            <p class="age">具有独立法人资格，合法经营</p>
+            <p class="name">1.app搜索列表页</p>
+            <p class="age">app主搜搜索页进入，列表页业务开发</p>
+          </div>
+        </li>
+        <li>
+          <div class="msg detail" @click="openInApp">
+            <Poptip trigger="hover" placement="right" width="320" content="content">
+              <p class="name">2.搜索列表页重构</p>
+              <p class="age">Ctrip Lizard框架 > Ctrip React Native(CRN)</p>
+              <div slot="content">
+                <img src="../common/img/list.png" style="width: 100%; height: 100%">
+              </div>
+            </Poptip>
+          </div>
+        </li>
+        <li>
+          <div class="msg detail" @click="openInApp">
+            <Poptip trigger="hover" placement="right" width="320" content="content">
+              <p class="name">3.搜索地图应用</p>
+              <p class="age">基于Lizard框架，支持百度地图、谷歌地图（国外）。</p>
+              <div slot="content">
+                <img src="../common/img/map.png" style="width: 100%; height: 100%">
+              </div>
+            </Poptip>
           </div>
         </li>
         <li>
           <div class="msg">
-            <p class="name">2.具有销售团队</p>
-            <p class="age">专职销售团队，具有互联网或SaaS领域销售经营背景。</p>
-          </div>
-        </li>
-        <li>
-          <div class="msg">
-            <p class="name">3.具有客户资源</p>
-            <p class="age">拥有当地丰富的企业级资源或线下门店资源。</p>
-          </div>
-        </li>
-        <li>
-          <div class="msg">
-            <p class="name">4.认可饷店文化</p>
-            <p class="age">认同饷店的产品价值和文化理念，愿意跟饷店长期合作。</p>
+            <p class="name">4.搜索引流查询管理后台</p>
+            <p class="age">inspinia_admin仓库提供的UI风格重构应用</p>
           </div>
         </li>
       </ul>
     </div>
-    <div class="joins">
-      <h2>成为经销商</h2>
+
+    <div class="ruless">
+      <div class="headBar">爱库存</div>
+      <ul class="friend-items">
+        <li>
+          <div class="msg">
+            <p class="name">1.支付收银台</p>
+            <p class="age">微信小店开店费用，支持微信、支付宝支付</p>
+          </div>
+        </li>
+        <li>
+          <div class="msg detail">
+            <Poptip trigger="hover" placement="right" width="320" content="content">
+              <a href="https://mall.xiangtuan.xyz/api/auth/t01hFd1jg3?distributorId=u9tHkcSR9D&channel=h5Mall&spm=30.36.935&ud=t0xGsh0Luf&ut=d&t=1587801815" target="_blank">
+                <p class="name">2.饷店1.0</p>
+                <p class="age">微信小店，开启用户自己店铺</p>
+              </a>
+              <div slot="content">
+                <img src="../common/img/xd.png" style="width: 100%; height: 100%">
+              </div>
+            </Poptip>
+          </div>
+        </li>
+        <li>
+          <div class="msg detail">
+            <Poptip trigger="hover" placement="right" width="320" content="content">              
+              <a href="https://h5.xiangdian.shop/" target="_blank">
+                <p class="name">3.饷店移动端官网</p>
+                <p class="age">店铺定义宣导，官方网站移动端</p>
+              </a>
+              <div slot="content">
+                <img src="../common/img/xdgw.png" style="width: 100%; height: 100%">
+              </div>
+            </Poptip>
+          </div>
+        </li>
+        <li>
+          <div class="msg">
+            <p class="name">4.销冠管理后台</p>
+            <p class="age">用户查询管理，店铺查询管理</p>
+          </div>
+        </li>
+      </ul>
     </div>
+
   </div>
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 export default {
   data() {
     return {
     }
   },
   mounted() {
+    this.setTab(1)
     window.scrollTo(0, 0)
   },
   methods: {
+    ...mapMutations(['setTab']),
+    openInApp() {
+      this.$Notice.open({
+        title: '请在携程APP上打开，主搜入口',
+        duration: 3
+      });
+    }
   }
 }
 </script>
@@ -89,85 +158,9 @@ export default {
 .wrap {
   width: 100%;
   background: #fff;
-  .service-entrance {
-    width: 90px;
-    height: 100px;
-    position: fixed;
-    bottom: 60px;
-    right: 0;
-    z-index: 100;
-  }
-  .banner {
-    width: 100%;
-    padding-bottom: 36%;
-    background-image: url("../common/img/city-banner.jpg");
-    background-size: 100% 100%;
-  }
-  .rights {
-    margin-top: 82px;
-    h1 {
-      font-size: 36px;
-      font-family: PingFang-SC-Heavy, microsoft yahei, arial, hiragino sans gb;
-      font-weight: 800;
-      color: #333;
-      line-height: 50px;
-    }
-    ul {
-      padding: 59px 100px 70px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: flex-start;
-      li {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        li.aa {
-          display: flex;
-          flex-direction:column;
-          justify-content:center;
-          align-items:center;          
-        }
-        .img1, .img2, .img3, .img4, .img5 {
-          width:72px;
-          height:72px;
-          background-size: 100% 100%!important;
-        }
-        h3 {
-          font-size: 16px;
-          font-family: PingFangSC-Medium;
-          font-weight: 500;
-          color:#333;
-          line-height:22px;
-          margin: 10px 0 9px;
-        }
-        p {
-          font-size:12px;
-          font-family:PingFangSC-Regular;
-          font-weight:400;
-          color:#666;
-          line-height:17px;
-        }
-        .img1 {
-          background-image: url('../common/img/source.png');
-        }
-        .img2 {
-          background-image: url('../common/img/rich.png');
-        }
-        .img3 {
-          background-image: url('../common/img/study.png');
-        }
-        .img4 {
-          background-image: url('../common/img/market.png');
-        }
-        .img5 {
-          background-image: url('../common/img/cook.png');
-        }
-      }
-    }
-  }
+  padding-top: 40px;
   .ruless {
+    margin-bottom: 90px;
     .headBar {
       font-size: 36px;
       font-family: PingFang-SC-Heavy, microsoft yahei, arial, hiragino sans gb;
@@ -190,10 +183,12 @@ export default {
         text-align: left;
         background: #f7f7f7;
         .msg {
+          &.detail {
+            cursor: pointer;
+          }
           p.name {
             font-size: 18px;
-            font-family: PingFang-SC-Heavy, microsoft yahei, arial,
-              hiragino sans gb;
+            font-family: PingFang-SC-Heavy, microsoft yahei, arial,sans-serif;
             font-weight: 800;
             color: #333;
             line-height: 25px;
@@ -209,57 +204,6 @@ export default {
             padding: 0 20px;
           }
         }
-      }
-    }
-  }
-  .joins {
-    width: 100%;
-    padding-bottom: 60px;
-    .inline {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-end;
-      & > div {
-        width: 49%;
-      }
-    }
-    h2 {
-      font-size: 36px;
-      font-family: PingFang-SC-Heavy, microsoft yahei, arial, hiragino sans gb;
-      font-weight: 800;
-      color: #333;
-      line-height: 50px;
-      padding: 76px 0 42px;
-    }
-    .btn {
-      width: 140px;
-      height: 44px;
-      background: #ec2232;
-      border-radius: 2px;
-      position: relative;
-      left: 430px;
-      top: 36px;
-      &:hover {
-        background: #fc3142;
-      }
-      &.disable {
-        opacity: 0.3;
-        color: #fff;
-      }
-    }
-    em {
-      padding: 0 0 10px 0;
-      font-style: normal;
-      display: inline-block;
-      &::after {
-        content: "*";
-        display: inline-block;
-        margin-left: 4px;
-        line-height: 1;
-        font-family: SimSun;
-        font-size: 12px;
-        color: #ed4014;
       }
     }
   }

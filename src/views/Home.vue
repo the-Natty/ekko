@@ -1,7 +1,7 @@
 <template>
   <div class="wrap">
     <div class="banner">
-      <Carousel autoplay v-model="init" loop arrow='hover' class="banner_swipe">
+      <Carousel autoplay v-model="init" loop arrow='never' class="banner_swipe">
         <CarouselItem v-for="(item, index) in bgArr" :key="index">
           <div class="demo-carousel" @click="watchFun(item.url)">
             <img :src="item.bg" alt="">
@@ -11,9 +11,7 @@
     </div>
     <div class="introduce">
       <h3>什么是远东</h3>
-      <p class="mt">远东（英文：Far East）是西方国家开始向东方扩张时对亚洲最东部地区的通称。</p>
-      <p>编程世界，技术大都由西方传入东方！</p>
-      <p>我：远东的FE（前端）</p>
+      <p class="mt">远东（英文：Far East）是亚洲最东部地区的通称。</p>
     </div>
     <div class="friends">
       <div class="headBar">曾经的Family</div>
@@ -21,20 +19,20 @@
         <li>
           <div class="img"></div>
           <div class="msg">
-            <p class="name">同程</p>
+            <p class="name">同程旅游</p>
             <p class="age">2.5年 前端开发</p>
-            <p class="tip tip1">2015年10-2018年3月</p>
-            <p class="tip">实习->主力</p>
+            <p class="tip tip1">2015年10月 - 2018年3月</p>
+            <p class="tip">实习 > 主力开发</p>
             <p class="tip">初入职场，默默成长</p>
           </div>
         </li>
         <li>
           <div class="img"></div>
           <div class="msg">
-            <p class="name">携程</p>
+            <p class="name">携程旅游</p>
             <p class="age">1.2年 前端开发</p>
-            <p class="tip tip1">2018年4月-2019年6月</p>
-            <p class="tip">主力->前端负责人</p>
+            <p class="tip tip1">2018年4月 - 2019年6月</p>
+            <p class="tip">主力 > 前端负责人</p>
             <p class="tip">攻略主搜前端负责人</p>
           </div>
         </li>
@@ -44,12 +42,12 @@
             <p class="name">爱库存</p>
             <p class="age">1年+  前端开发</p>
             <p class="tip tip1">2019年6月-至今</p>
-            <p class="tip">主力->领域负责人</p>
+            <p class="tip">主力 > 领域负责人</p>
             <p class="tip">销冠领域前端负责人</p>
           </div>
         </li>
       </ul>
-      <div class="watch-btn" @click="watchExp">查看经历</div>
+      <div class="watch-btn" @click="watchExp">查看项目</div>
     </div>
   </div>
 </template>
@@ -82,7 +80,7 @@ export default {
       window.open(url, '_blank')
     },
     watchExp() {
-      this.$router.push('/experience')
+      this.$router.push('/project')
     }
   }
 }
@@ -94,12 +92,12 @@ export default {
     background: #fff;
     .banner {
       width: 100%;
-      height: 360px;
+      height: 400px;
       .banner_swipe {
-        height: 360px;
+        height: 400px;
         width: 100%;
         img {
-          height: 360px;
+          height: 400px;
           width: 100%;
         }
       }
@@ -178,10 +176,10 @@ export default {
             }
           }
           &:first-child .img {
-            background-image: url('../common/img/logotc.jpg');
+            background-image: url('../common/img/once.jpg');
           }
           &:nth-child(2) .img {
-            background-image: url('../common/img/logoxc.jpg');
+            background-image: url('../common/img/second.jpg');
           }
           &:last-child .img{
             background-image: url('../common/img/logoakc.jpg');

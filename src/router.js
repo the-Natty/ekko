@@ -22,14 +22,6 @@ export const router = new Router({
       }
     },
     {
-      path: '/experience',
-      name: 'experience',
-      component: () => import('./views/experience.vue'),
-      meta: {
-        title: '经历'
-      }
-    },
-    {
       path: '/project',
       name: 'project',
       component: () => import('./views/project.vue'),
@@ -38,11 +30,11 @@ export const router = new Router({
       }
     },
     {
-      path: '/project/:id',
-      name: 'project',
-      component: () => import('./views/projectDetail.vue'),
+      path: '/technology',
+      name: 'technology',
+      component: () => import('./views/technology.vue'),
       meta: {
-        title: '项目详情'
+        title: '技术'
       }
     },
     {

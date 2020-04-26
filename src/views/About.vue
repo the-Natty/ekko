@@ -15,7 +15,7 @@
         </ul>
         <ul>
           <li>
-            <h4>携程的技术大牛们</h4>
+            <h4>携程的开发大牛们</h4>
             <p>用他们严谨而创新的思维，通过一串串代码，构建了携程搜索这个坚实的产品。</p>
           </li>
           <li>
@@ -25,10 +25,7 @@
         </ul>
       </div>
       <div class="pic-content">
-        <ul class="lineOne">
-          <li v-for="item in 3" :key="item"></li>
-        </ul>
-        <ul class="lineTwo">
+        <ul v-for="em in 2" :key="em"  :class="`line${em}`" >
           <li v-for="item in 3" :key="item"></li>
         </ul>
       </div>
@@ -122,7 +119,7 @@ export default {
             height: 100%;
             background-size: 100% 100%;
           }
-          &.lineOne {
+          &.line1 {
             li:first-child {
               background-image: url('../common/img/about1.jpg');
             }
@@ -133,7 +130,7 @@ export default {
               background-image: url('../common/img/about2.jpg');
             }
           }
-          &.lineTwo {
+          &.line2 {
             margin-top: 14px;
             li:first-child {
               background-image: url('../common/img/about4.jpg');

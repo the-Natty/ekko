@@ -47,7 +47,7 @@ export default {
   .base-wrap {
     width: 1000px;
     min-width: 1000px;
-    margin: 0 auto;
-    min-height: calc(100vh - 169px);
+    margin: 60px auto 0;
+    min-height: calc(100vh - 109px);
   }
 </style>

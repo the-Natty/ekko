@@ -6,8 +6,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     tab: 0,
-    tabs: ['远东', '经历', '项目', '关于'],
-    tabsPath: ['/', 'experience', 'project', 'about']
+    tabs: ['远东', '项目', '技术', '关于'],
+    tabsPath: ['/', 'project', 'technology', 'about']
   },
   mutations: {
     setTab(state, value) {

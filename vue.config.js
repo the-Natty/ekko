@@ -49,12 +49,12 @@ module.exports = {
       .end()
 
     // === 图片压缩 ===
-    config.module
-      .rule('images')
-      .use('image-webpack-loader')
-      .loader('image-webpack-loader')
-      .options({ bypassOnDebug: true })
-      .end()
+    // config.module
+    //   .rule('images')
+    //   .use('image-webpack-loader')
+    //   .loader('image-webpack-loader')
+    //   .options({ bypassOnDebug: true })
+    //   .end()
   },
   // pluginOptions: {
   //   "style-resources-loader": {
