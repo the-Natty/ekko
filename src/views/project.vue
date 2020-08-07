@@ -17,7 +17,7 @@
                 <p class="age">定制旅游，团队报名，只玩自己想玩的。</p>
               </a>
               <div slot="content">
-                <img src="../common/img/dz.png" style="width: 100%; height: 100%">
+                <img :src="`${$imgs['dz']}`" style="width: 100%; height: 100%">
               </div>
             </Poptip>
           </div>
@@ -30,7 +30,7 @@
                 <p class="age">官网国内游产品详情页，<strong style="font-weight: bolder;">用户点评</strong>。</p>
               </a>
               <div slot="content">
-                <img src="../common/img/dp.png" style="width: 100%; height: 100%">
+                <img :src="`${$imgs['dp']}`" style="width: 100%; height: 100%">
               </div>
             </Poptip>
           </div>
@@ -59,7 +59,7 @@
               <p class="name">2.搜索列表页重构</p>
               <p class="age">Ctrip Lizard框架 > Ctrip React Native(CRN)</p>
               <div slot="content">
-                <img src="../common/img/list.png" style="width: 100%; height: 100%">
+                <img :src="`${$imgs['list']}`" style="width: 100%; height: 100%">
               </div>
             </Poptip>
           </div>
@@ -70,7 +70,7 @@
               <p class="name">3.搜索地图应用</p>
               <p class="age">基于Lizard框架，支持百度地图、谷歌地图（国外）。</p>
               <div slot="content">
-                <img src="../common/img/map.png" style="width: 100%; height: 100%">
+                <img :src="`${$imgs['map']}`" style="width: 100%; height: 100%">
               </div>
             </Poptip>
           </div>
@@ -101,7 +101,7 @@
                 <p class="age">微信小店，开启用户自己店铺</p>
               </a>
               <div slot="content">
-                <img src="../common/img/xd.png" style="width: 100%; height: 100%">
+                <img :src="`${$imgs['xd']}`" style="width: 100%; height: 100%">
               </div>
             </Poptip>
           </div>
@@ -114,7 +114,7 @@
                 <p class="age">店铺定义宣导，官方网站移动端</p>
               </a>
               <div slot="content">
-                <img src="../common/img/xdgw.png" style="width: 100%; height: 100%">
+                <img :src="`${$imgs['xdgw']}`" style="width: 100%; height: 100%">
               </div>
             </Poptip>
           </div>

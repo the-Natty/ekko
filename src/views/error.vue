@@ -1,6 +1,6 @@
 <template>
   <div class="bg-wrap">
-    <div class="container"></div>
+    <div class="container" :style="`background: url('${$imgs['404']}')`"></div>
   </div>
 </template>
 
@@ -23,6 +23,5 @@ export default { }
     transform: translate(-50%, -50%);
     width: 990px;
     height: 440px;
-    background: url('../common/img/404.jpg');
   }
 </style>

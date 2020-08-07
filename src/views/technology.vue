@@ -103,7 +103,7 @@ export default {
   .banner {
     width: 100%;
     padding-bottom: 36%;
-    background-image: url("../common/img/city-banner.jpg");
+    // background-image: url("../common/img/city-banner.jpg");
     background-size: 100% 100%;
   }
   .rights {
@@ -152,21 +152,21 @@ export default {
           color:#666;
           line-height:17px;
         }
-        .img1 {
-          background-image: url('../common/img/source.png');
-        }
-        .img2 {
-          background-image: url('../common/img/rich.png');
-        }
-        .img3 {
-          background-image: url('../common/img/study.png');
-        }
-        .img4 {
-          background-image: url('../common/img/market.png');
-        }
-        .img5 {
-          background-image: url('../common/img/cook.png');
-        }
+        // .img1 {
+        //   background-image: url('../common/img/source.png');
+        // }
+        // .img2 {
+        //   background-image: url('../common/img/rich.png');
+        // }
+        // .img3 {
+        //   background-image: url('../common/img/study.png');
+        // }
+        // .img4 {
+        //   background-image: url('../common/img/market.png');
+        // }
+        // .img5 {
+        //   background-image: url('../common/img/cook.png');
+        // }
       }
     }
   }

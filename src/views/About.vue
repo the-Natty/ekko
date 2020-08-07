@@ -26,7 +26,7 @@
       </div>
       <div class="pic-content">
         <ul v-for="em in 2" :key="em"  :class="`line${em}`" >
-          <li v-for="item in 3" :key="item"></li>
+          <li v-for="item in 3" :key="item" :style="`background-image: url('${$imgs['about' + (em == 1 ? item : item + 3)]}')`"></li>
         </ul>
       </div>
     </div>
@@ -118,29 +118,6 @@ export default {
             width: 323px;
             height: 100%;
             background-size: 100% 100%;
-          }
-          &.line1 {
-            li:first-child {
-              background-image: url('../common/img/about1.jpg');
-            }
-            li:nth-child(2) {
-              background-image: url('../common/img/about3.jpg');
-            }
-            li:last-child {
-              background-image: url('../common/img/about2.jpg');
-            }
-          }
-          &.line2 {
-            margin-top: 14px;
-            li:first-child {
-              background-image: url('../common/img/about4.jpg');
-            }
-            li:nth-child(2) {
-              background-image: url('../common/img/about6.jpg');
-            }
-            li:last-child {
-              background-image: url('../common/img/about5.jpg');
-            }
           }
         }
       }

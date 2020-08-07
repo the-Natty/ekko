@@ -1,7 +1,7 @@
 <template>
   <div class="title">
     <div class="left">
-      <img :src="logo" alt="logo" class="logo">
+      <img :src="`${$imgs['fe']}`" alt="logo" class="logo">
       <span>Far East</span>
     </div>
     <ul class="right">
@@ -12,13 +12,10 @@
 
 <script>
 import { mapState, mapMutations } from 'vuex'
-import logo from '@/common/img/fe.jpg'
 export default {
   name: 'Head',
   data() {
-    return {
-      logo: logo
-    }
+    return {}
   },
   computed: {
     ...mapState([

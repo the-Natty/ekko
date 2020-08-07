@@ -4,7 +4,7 @@
       <Carousel autoplay v-model="init" loop arrow='never' class="banner_swipe">
         <CarouselItem v-for="(item, index) in bgArr" :key="index">
           <div class="demo-carousel" @click="watchFun(item.url)">
-            <img :src="item.bg" alt="">
+            <img :src="`${$imgs['company' + index]}`" alt="">
           </div>
         </CarouselItem>
       </Carousel>
@@ -53,21 +53,15 @@
 </template>
 
 <script>
-import b2 from '../common/img/company1.jpg'
-import b3 from '../common/img/company2.jpg'
-import b4 from '../common/img/company3.jpg'
 export default {
   data() {
     return {
       init: 0,
       bgArr: [{
-        bg: b2,
         url: 'https://www.ly.com/'
       }, {
-        bg: b3,
         url: 'https://www.ctrip.com/'
       }, {
-        bg: b4,
         url: 'https://www.aikucun.com/'
       }]
     }
@@ -174,15 +168,6 @@ export default {
               line-height: 22px;
               font-size: 14px;
             }
-          }
-          &:first-child .img {
-            background-image: url('../common/img/once.jpg');
-          }
-          &:nth-child(2) .img {
-            background-image: url('../common/img/second.jpg');
-          }
-          &:last-child .img{
-            background-image: url('../common/img/logoakc.jpg');
           }
         }
       }

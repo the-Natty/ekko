@@ -8,20 +8,17 @@
       <div class="company">前端 工程师 前端工程师 前端开发 攻城狮 程序员 软件工程师</div>
     </div>
     <div class="right">
-      <img :src="logo" alt="logo">
+      <img :src="`${$imgs['fe']}`" alt="logo">
     </div>
   </div>
 </template>
 
 <script>
 import { mapState, mapMutations } from 'vuex'
-import logo from '@/common/img/fe.jpg'
 export default {
   name: 'Foot',
   data() {
-    return {
-      logo: logo
-    }
+    return {}
   },
   computed: {
     ...mapState([
