@@ -15,8 +15,8 @@ export const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: () => import('./views/home.vue'),
+      name: 'index',
+      component: () => import('./views/index.vue'),
       meta: {
         title: '远东'
       }
