@@ -6,8 +6,13 @@ set -e
 # 构建
 yarn build
 
-# cd 到构建输出的目录下 
-cd dist
+# cd 到构建输出的目录下
+cd docs
+
+# 部署到自定义域域名
+echo 'cxfei.cc' > CNAME
+
+cd ../
 
 git init
 git add -A
@@ -17,6 +22,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # 部署到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:ekko125/fareast.git master
+git push -f git@github.com:the-natty/workExp.git master
 
 cd -

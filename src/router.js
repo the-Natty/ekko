@@ -40,7 +40,7 @@ export const router = new Router({
     {
       path: '/about',
       name: 'about',
-      component: () => import('./views/about.vue'),
+      component: () => import('./views/thenatty.vue'),
       meta: {
         title: '关于'
       }

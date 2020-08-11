@@ -21,7 +21,6 @@
     "babel-plugin-import": "^1.12.2",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "image-webpack-loader": "^6.0.0",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
     "loadsh": "^0.0.4",

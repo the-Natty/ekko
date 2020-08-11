@@ -4,11 +4,6 @@ function resolve (dir) {
 }
 
 module.exports = {
-  configureWebpack: (config)=>{
-    return {
-      name: 'ekko125'
-    }
-  },
   chainWebpack: (config)=>{
     config.resolve.alias
       .set('@', resolve('src'))
@@ -34,7 +29,7 @@ module.exports = {
       msTileImage: 'favicon.ico'
     }
   },
-  productionSourceMap: false,
   lintOnSave: false,
   publicPath: './',
+  outputDir: 'docs'
 }
